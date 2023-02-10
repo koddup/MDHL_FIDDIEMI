@@ -19,6 +19,39 @@ header {
     box-shadow: 0 0 8px 8px black;
 }
 
+header #title {
+    display: block;
+    padding: 2rem;
+    padding-bottom: 5rem;
+    font-size: 3.5rem;
+    color: rgba(248, 225, 46);
+    text-shadow: 3px 3px 2px rgba(198, 72, 50), 8px 8px 4px black,
+    -2px -2px 4px black;
+}
+
+header #subtitle {
+    display: block;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: black;
+    color: rgba(248, 225, 46);
+    text-shadow: 1px 1px 3px rgba(198, 72, 50), 1px 1px 3px black;
+}
+
+header #logo {
+    display: block;
+    position: relative;
+}
+
+header #logo img {
+    width: 10rem;
+    -webkit-filter: drop-shadow(4px 4px 3px white) drop-shadow(-4px -4px 3px white);
+    filter: drop-shadow(4px 4px 3px white) drop-shadow(-4px -4px 3px white);
+    position: absolute;
+    right: 10%;
+    bottom: -7rem;
+}
+
 nav {
     display: inline-block;
     margin-top: 3rem;
@@ -48,14 +81,15 @@ main {
     margin-right: 1rem;
     margin-bottom: 2rem;
     vertical-align: top;
+    max-width: 70vw;
 }
 
-#calendario {
+#calendar {
     display: inline-block;
     padding: 1rem;
 }
 
-#calendario>.evento {
+#calendar>.event {
     margin-bottom: 2rem;
 }
 
@@ -65,8 +99,30 @@ main {
     text-indent: 25px;
 }
 
-main>.foto {
+a[href^="mailto:"]{
+    color: blue;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#contact-info {
     display: inline-block;
+    padding: 1rem;
+}
+
+#about {
+    display: inline-block;
+    padding: 1rem;
+}
+
+#about p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-indent: 25px;
+}
+
+.photo {
+    display: none;
     vertical-align: top;
     margin-top: 2rem;
 }
@@ -76,32 +132,3 @@ nav>a:hover {
     transition: background-color 0.2s;
 }
 
-#logo {
-    display: inline-block;
-    position: relative;
-    bottom: -7rem;
-    left: 75vw;
-}
-
-#logo img {
-    width: 10rem;
-    -webkit-filter: drop-shadow(4px 4px 3px white) drop-shadow(-4px -4px 3px white);
-    filter: drop-shadow(4px 4px 3px white) drop-shadow(-4px -4px 3px white);
-}
-
-#titulo {
-    padding: 2rem;
-    font-size: 3.5rem;
-    color: rgba(248, 225, 46);
-    text-shadow: 3px 3px 2px rgba(198, 72, 50), 8px 8px 4px black,
-    -2px -2px 4px black;
-}
-
-#subtitulo {
-    display: block;
-    padding: 0.5rem;
-    text-align: center;
-    background-color: black;
-    color: rgba(248, 225, 46);
-    text-shadow: 1px 1px 3px rgba(198, 72, 50), 1px 1px 3px black;
-}

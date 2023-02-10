@@ -6,29 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
-    <title>Intro html</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Mighty Ducks Hockey League - Contact</title>
 </head>
 
 <body>
     <header>
-        <figure>
-            <img src="./assets/Logo_Mighty_ducks.png" alt="Logo" width="200">
+        <h1 id="title">Mighty Ducks Hockey League</h1>
+        <figure id="logo">
+            <img src="./assets/new_logo.png" alt="Logo">
         </figure>
-        <h1>Mighty Ducks Hockey League</h1>
+        <h2 id="subtitle">Contact</h2>
     </header>
     <nav>
-        <a href="./">Home</a> |
-        <a href="./about.html">About MDHL</a> |
-        <a href="./contact.html">Contact</a>
+        <a href="/">Home</a>
+        <a href="./about.html">About MDHL</a>
+        <a class="active" href="./contact.html">Contact</a>
     </nav>
     <main>
-        <figure>
-            <img src="./assets/hockey3.jpg" alt="playing hockey" width="200">
-        </figure>
-        <article>
-            <h4>Please email us at <a href="mailto:mdhl@chihockey.org">mdhl@chihockey.org</a></h4>
-            <p>We reply to your email as soon as we can.</p>
-        </article>
+        <div id="contact-info">
+            <article>
+                <h4>Please email us at <a href="mailto:mdhl@chihockey.org">mdhl@chihockey.org</a></h4>
+                <p>We reply to your email as soon as we can.</p>
+            </article>
+            <figure class="photo">
+                <img src="./assets/hockey3.jpg" alt="playing hockey" width="200">
+            </figure>
+        </div>
     </main>
 </body>
 
