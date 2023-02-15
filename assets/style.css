@@ -1,3 +1,5 @@
+/* GENERALES */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,25 +12,6 @@
 @font-face {
     font-family: Attari_Salees;
     src: url("./Attari_Salees.ttf");
-}
-
-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, rgb(255, 255, 255)), url("./design1_image1.jpg");
-    background-size: cover;
-    background-position: center 30%;
-    background-repeat: no-repeat;
-}
-
-header #title {
-    padding: 2rem;
-    /* font-family: Attari_Salees; */
-    font-size: 3rem;
-    color: rgba(248, 225, 46);
-    text-shadow: 3px 3px 2px rgba(198, 72, 50), 5px 5px 4px black,
-        -2px -2px 4px black;
 }
 
 #subtitle {
@@ -69,6 +52,61 @@ header #title {
     color: black;
 }
 
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+a[href^="mailto:"] {
+    color: blue;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.gradient-headline {
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    font-size: 1.2rem;
+    background: linear-gradient(90deg, rgb(112, 3, 103) 40%, rgba(0, 212, 255, 0.5) 80%, rgba(0, 212, 255, 0) 100%);
+    color: azure;
+}
+
+.col-con-borde {
+    border: 1px solid black;
+}
+
+.container {
+    display: flex;
+}
+
+/* BANNER */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, rgb(255, 255, 255)), url("./design1_image1.jpg");
+    background-size: cover;
+    background-position: center 30%;
+    background-repeat: no-repeat;
+}
+
+header #title {
+    padding: 2rem;
+    /* font-family: Attari_Salees; */
+    font-size: 3rem;
+    color: rgba(248, 225, 46);
+    text-shadow: 3px 3px 2px rgba(198, 72, 50), 5px 5px 4px black,
+        -2px -2px 4px black;
+}
+
 header #logo {
     padding: 1rem;
 }
@@ -78,6 +116,8 @@ header #logo img {
     -webkit-filter: drop-shadow(4px 4px 3px white) drop-shadow(-4px -4px 3px white);
     filter: drop-shadow(4px 4px 3px white) drop-shadow(-4px -4px 3px white);
 }
+
+/* NAVIGATION BAR */
 
 nav {
     margin-top: 3rem;
@@ -112,19 +152,7 @@ nav>a:hover:not(.active) {
     transition: 0.3s;
 }
 
-.container {
-    display: flex;
-}
-
-main {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
+/* HOME */
 
 #calendar {
     display: flex;
@@ -180,11 +208,7 @@ main {
     flex-grow: 1;
 }
 
-a[href^="mailto:"] {
-    color: blue;
-    font-weight: normal;
-    text-decoration: none;
-}
+/* CONTACT */
 
 #contact-info {
     display: flex;
@@ -205,6 +229,8 @@ a[href^="mailto:"] {
     padding-right: 1.5rem;
     padding-bottom: 2rem;
 }
+
+/* ABOUT MDHL */
 
 #about {
     display: flex;
@@ -232,6 +258,8 @@ a[href^="mailto:"] {
     padding-left: 0.5rem;
 }
 
+/* RULES */
+
 #rules {
     display: flex;
     flex-grow: 1;
@@ -246,14 +274,6 @@ a[href^="mailto:"] {
     padding-bottom: 2rem;
 }
 
-.gradient-headline {
-    padding-bottom: 0.5rem;
-    padding-top: 0.5rem;
-    padding-left: 0.5rem;
-    font-size: 1.2rem;
-    background: linear-gradient(90deg, rgb(112, 3, 103) 40%, rgba(0, 212, 255, 0.5) 80%, rgba(0, 212, 255, 0) 100%);
-    color: azure;
-}
 
 #rules section p,
 #rules section ol,
@@ -283,6 +303,8 @@ a[href^="mailto:"] {
 #allplay-list {
     list-style-type: circle;
 }
+
+/* GAME INFORMATION */
 
 #game-info {
     display: flex;
@@ -321,7 +343,7 @@ a[href^="mailto:"] {
     background: linear-gradient(90deg, rgb(112, 3, 103) 40%, rgba(0, 212, 255, 1) 100%) !important;
     color: azure;
     text-shadow: 1px 1px 5px rgba(112, 3, 103, 1), 0 0 0.1em rgba(0, 212, 255, 0.4);
-    
+
 }
 
 #game-info>table>thead tr th {
@@ -341,6 +363,23 @@ a[href^="mailto:"] {
     text-align: center
 }
 
+#game-info>dl {
+    padding-top: 2rem;
+}
+
+#game-info>dl>div>dt {
+    font-weight: bold;
+    padding-right: 0.5rem;
+}
+
+#game-info>dl>div {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0.7rem;
+}
+
+/* ASIDE */
+
 aside {
     display: flex;
     flex-direction: column;
@@ -350,6 +389,8 @@ aside {
     margin-bottom: 3rem;
     margin-right: 3rem;
 }
+
+/* PHOTOS */
 
 .photo {
     overflow: clip;
